@@ -17,12 +17,15 @@ private:
     string _id;
 
 public:
-
-    void addMovie(Movie* movie);
-    vector<Movie*> getMovies();
+	void addMovie(Movie* movie);
+	
+	//setters
+	void setId(string id);
     void setName(string name);
-    string getName() const;
-    void setId(string id);
+    
+	//getters
+	vector<Movie*> getMovies();
+	string getName() const;
     string getId() const;
 };
 
